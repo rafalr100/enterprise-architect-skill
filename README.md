@@ -51,6 +51,26 @@ enterprise-architect-skill/
 
 The reference files are **loaded on demand** — Claude reads only the one a given task requires, keeping `SKILL.md` lean and context cheap.
 
+## Example
+
+The skill's signature move is that it **interrogates the problem before solving it**. A junior prompt gets a senior response:
+
+> **You:** We're moving to microservices. Design the target architecture.
+>
+> **Claude (enterprise-architect skill active):**
+> Before I design this, four questions that will change the answer — not box-ticking:
+>
+> 1. **What's forcing the move?** Scaling pain, team-autonomy/deploy bottlenecks, or a tech-refresh mandate? (Each points at a different decomposition.)
+> 2. **Which two quality attributes dominate** — independent deployability, resilience, latency, or cost? Rank them; "all of them" isn't an answer.
+> 3. **Greenfield or strangling a monolith?** And how many teams will own services day-to-day? (Conway's Law decides your service boundaries as much as the domain does.)
+> 4. **Any fixed constraints** — cloud/vendor mandate, regulatory regime, a hard date?
+>
+> Answer those and I'll come back with a target architecture (current → target → gap → migration path), the dominant trade-off named, one recommended decomposition strategy, and the alternatives I rejected. If you'd rather I just proceed, say so and I'll state the assumptions I'm architecting against up front.
+
+From there it produces the right artifact in the right shape — a reference architecture, an ADR, a capability map, or a board deck re-altituded to "do we fund this?" — with the trade-off and the ask made explicit. Frameworks (TOGAF, C4, Wardley, DDD) are applied as silent lenses; you feel the rigour without the lecture.
+
+> 💡 Screenshots and a longer worked example are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Installation
 
 The skill lives in [`skills/enterprise-architect/`](skills/enterprise-architect/). Install that folder (the directory containing `SKILL.md` and `references/`) wherever Claude discovers skills for your surface:
