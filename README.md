@@ -1,6 +1,19 @@
-# Enterprise Architect — a Claude Skill
+<p align="center">
+  <img src="assets/banner.svg" alt="Enterprise Architect — a Claude Skill" width="100%">
+</p>
 
-A reusable [Claude Skill](https://www.anthropic.com/news/skills) that makes Claude operate as a **world-class Enterprise Architect** — the technical depth of a FAANG principal architect combined with the judgement of a top-tier strategy consultant. Grounded in TOGAF, Zachman, C4, Wardley, DDD, and modern EA practice.
+<p align="center">
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-f0883e.svg"></a>
+  <img alt="Type: Claude Skill" src="https://img.shields.io/badge/type-Claude%20Skill-fbbf24.svg">
+  <img alt="Not an MCP server" src="https://img.shields.io/badge/not-an%20MCP%20server-6e8bff.svg">
+  <img alt="Organisation-agnostic" src="https://img.shields.io/badge/scope-organisation--agnostic-3fb950.svg">
+  <img alt="Grounded in TOGAF · Zachman · C4 · Wardley · DDD" src="https://img.shields.io/badge/grounded%20in-TOGAF%20·%20Zachman%20·%20C4%20·%20Wardley%20·%20DDD-bc8cff.svg">
+</p>
+
+<p align="center">
+  <b>A reusable <a href="https://www.anthropic.com/news/skills">Claude Skill</a> that makes Claude operate as a world-class Enterprise Architect</b><br>
+  — the technical depth of a FAANG principal architect, the judgement of a top-tier strategy consultant.
+</p>
 
 It is **100% generic and organisation-agnostic** — no company, person, client, or proprietary context is embedded. Drop it into any environment and it works for any enterprise.
 
@@ -16,6 +29,10 @@ It is **100% generic and organisation-agnostic** — no company, person, client,
 - **Tiers presentations to the audience.** The same architecture re-altituded for **C-level/board** ("do we fund this?" — money, risk, time), **solution architects** ("is the design right and buildable?" — patterns, NFRs, sequencing), or **engineering/delivery** ("how do I build to standard?" — interfaces, constraints, guardrails) — by *subtraction*, not rewriting.
 - **Delegates heavy engagements.** Decomposes large, multi-workstream work into parallel threads (real sub-agents where the environment supports them, sequential self-contained threads otherwise) and **always owns the integrating synthesis** — reconciling conflicts between strands into one coherent recommendation, never just stapling threads together.
 - **Communicates for the boardroom.** Claim-style headlines ("Hub-and-spoke cuts integration cost 40%," not "Integration Approach"), one sharp analogy per hard concept, clarity over false precision, and a closing **Decision / Ask**.
+
+<p align="center">
+  <img src="assets/how-it-thinks.svg" alt="How it thinks: a discovery gate followed by a seven-step loop from business driver to one recommendation and governance" width="100%">
+</p>
 
 ## When it activates
 
@@ -39,6 +56,7 @@ enterprise-architect-skill/
 ├── LICENSE                                  # MIT
 ├── CONTRIBUTING.md                          # how to contribute + skill writing style
 ├── .gitignore
+├── assets/                                  # README diagrams (SVG)
 └── skills/
     └── enterprise-architect/
         ├── SKILL.md                         # core: identity, hard rules, method, diagnostics
@@ -68,6 +86,12 @@ The skill's signature move is that it **interrogates the problem before solving 
 > Answer those and I'll come back with a target architecture (current → target → gap → migration path), the dominant trade-off named, one recommended decomposition strategy, and the alternatives I rejected. If you'd rather I just proceed, say so and I'll state the assumptions I'm architecting against up front.
 
 From there it produces the right artifact in the right shape — a reference architecture, an ADR, a capability map, or a board deck re-altituded to "do we fund this?" — with the trade-off and the ask made explicit. Frameworks (TOGAF, C4, Wardley, DDD) are applied as silent lenses; you feel the rigour without the lecture.
+
+The same architecture is told at three altitudes — and re-altituded by **subtraction**, not rewriting:
+
+<p align="center">
+  <img src="assets/deck-tiers.svg" alt="One architecture told at three altitudes — C-level, solution architect, engineering — each answering a different question" width="100%">
+</p>
 
 > 💡 Screenshots and a longer worked example are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -119,6 +143,10 @@ In agentic environments with sub-agent tooling, the **delegation** feature uses 
 - **PRIMACY ZONE** — identity, the hard rules that must never be violated, and the output-format lock. The non-negotiables, placed first.
 - **MIDDLE ZONE** — the working method: discovery, frameworks-as-lenses, the pattern/reference-architecture/implementation distinction, the artifact catalogue, audience calibration, deck tiering, delegation, and a diagnostic checklist.
 - **RECENCY ZONE** — a verification checklist and the success criteria, placed last so they're the final thing in context before Claude answers.
+
+<p align="center">
+  <img src="assets/three-zones.svg" alt="The three zones of SKILL.md — PRIMACY, MIDDLE, RECENCY — mapped against model attention" width="100%">
+</p>
 
 A guiding principle throughout: **frameworks are thinking lenses, never recited by name to the audience.** The reader feels the rigour without seeing the scaffolding.
 

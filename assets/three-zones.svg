@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" width="1200" height="470" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="z-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#10151f"/>
+      <stop offset="1" stop-color="#0b0f17"/>
+    </linearGradient>
+    <linearGradient id="attn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbbf24" stop-opacity="0.9"/>
+      <stop offset="0.5" stop-color="#6e8bff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#fbbf24" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="468" rx="20" fill="url(#z-bg)" stroke="#30363d" stroke-width="1.5"/>
+  <text x="40" y="56" font-size="26" font-weight="800" fill="#e6edf3">SKILL.md — built in three zones</text>
+  <text x="40" y="86" font-size="16" fill="#8b949e">The hardest constraints sit where model attention is strongest — primacy and recency, not the middle.</text>
+
+  <!-- attention spine -->
+  <rect x="40" y="120" width="14" height="320" rx="7" fill="url(#attn)"/>
+  <text x="30" y="118" font-size="12" fill="#8b949e" font-weight="700">attention</text>
+  <text x="34" y="136" font-size="11" fill="#fbbf24" font-weight="700">high</text>
+  <text x="32" y="290" font-size="11" fill="#6e8bff" font-weight="700" transform="rotate(0)">low</text>
+  <text x="34" y="438" font-size="11" fill="#fbbf24" font-weight="700">high</text>
+
+  <!-- PRIMACY -->
+  <rect x="78" y="120" width="1082" height="96" rx="14" fill="#1a1206" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="104" y="154" font-size="19" font-weight="800" fill="#fbbf24">PRIMACY ZONE</text>
+  <text x="104" y="180" font-size="14.5" fill="#c9d1d9" font-weight="600">Identity · hard rules that must never be violated · output-format lock</text>
+  <text x="104" y="202" font-size="13" fill="#8b949e">Who you are, the non-negotiables (capability first, always name the trade-off, one recommendation), placed first.</text>
+
+  <!-- MIDDLE -->
+  <rect x="78" y="226" width="1082" height="120" rx="14" fill="#0e1726" stroke="#6e8bff" stroke-width="1.5"/>
+  <text x="104" y="258" font-size="19" font-weight="800" fill="#6e8bff">MIDDLE ZONE</text>
+  <text x="104" y="284" font-size="14.5" fill="#c9d1d9" font-weight="600">The working method — depth, loaded on demand</text>
+  <g font-size="12.5" fill="#8b949e">
+    <text x="104" y="308">Discovery · frameworks-as-lenses · pattern vs. reference architecture vs. implementation · artifact catalogue</text>
+    <text x="104" y="328">audience calibration · deck tiering · workstream delegation · diagnostic checklist → references/*.md read only when needed</text>
+  </g>
+
+  <!-- RECENCY -->
+  <rect x="78" y="356" width="1082" height="84" rx="14" fill="#1a1206" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="104" y="388" font-size="19" font-weight="800" fill="#fbbf24">RECENCY ZONE</text>
+  <text x="104" y="414" font-size="14.5" fill="#c9d1d9" font-weight="600">Verification checklist + success criteria — the last thing in context before Claude answers</text>
+</svg>
