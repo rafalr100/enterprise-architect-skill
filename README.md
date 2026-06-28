@@ -71,20 +71,22 @@ The reference files are **loaded on demand** — Claude reads only the one a giv
 
 ## Example
 
-The skill's signature move is that it **interrogates the problem before solving it**. A junior prompt gets a senior response:
+The skill's signature move is that it **interrogates the problem before solving it** — a one-line prompt gets a senior response, not a guess.
 
-<p align="center">
-  <img src="assets/demo.gif" alt="Demo: a one-line microservices request is met with the skill's discovery questions before any design" width="92%">
-</p>
+### What you can ask
 
-…and once you answer, it delivers the artifact — here, the same architecture tiered for three audiences:
+| You ask… | …and it produces |
+|---|---|
+| *"Design the target architecture for moving our monolith to microservices."* | A **target architecture**: current → target → gap → migration path (now/next/later), with the dominant trade-off named. |
+| *"Should we build or buy our customer data platform?"* | An **options analysis** weighted to your driving quality attributes, ending in one recommendation + the alternatives rejected. |
+| *"Write an ADR for event-driven vs. request/response integration."* | An **Architecture Decision Record**: context → decision → status → consequences (with options considered). |
+| *"Create a capability map for our payments domain."* | A **capability map** — capability tiers with maturity/heat and an investment signal. |
+| *"Draft a standard for cross-region failover."* | A **standard**: statement → rationale → implications → compliance measure → exception path. |
+| *"Turn this reference architecture into a board deck."* | A **5–7 slide board deck** re-altituded to "do we fund this?" — money, risk, time; no component diagrams. |
 
-<p align="center">
-  <img src="assets/demo-artifact.gif" alt="Demo: after the discovery answers, the skill produces an audience-tiered decks artifact" width="92%">
-</p>
+### How it responds — discovery first
 
-<details>
-<summary>Read the exchange as text</summary>
+Give it a thin brief and it asks the questions that change the answer *before* designing:
 
 > **You:** We're moving to microservices. Design the target architecture.
 >
@@ -98,17 +100,17 @@ The skill's signature move is that it **interrogates the problem before solving 
 >
 > Answer those and I'll come back with a target architecture (current → target → gap → migration path), the dominant trade-off named, one recommended decomposition strategy, and the alternatives I rejected. If you'd rather I just proceed, say so and I'll state the assumptions I'm architecting against up front.
 
-</details>
+(Already have a rich brief, or in a hurry? Say "just proceed" and it states its assumptions up front instead of asking.)
 
-From there it produces the right artifact in the right shape — a reference architecture, an ADR, a capability map, or a board deck re-altituded to "do we fund this?" — with the trade-off and the ask made explicit. Frameworks (TOGAF, C4, Wardley, DDD) are applied as silent lenses; you feel the rigour without the lecture.
+### How it presents the output
 
-The same architecture is told at three altitudes — and re-altituded by **subtraction**, not rewriting:
+Once it has the brief, it leads with the **recommendation**, names the **trade-off**, traces every choice back to a business driver, and ends on a **Decision / Ask**. Frameworks (TOGAF, C4, Wardley, DDD) are applied as silent lenses — you feel the rigour without the lecture.
+
+When the deliverable is a deck, the same architecture is told at three altitudes — re-altituded by **subtraction**, not rewriting:
 
 <p align="center">
   <img src="assets/deck-tiers.svg" alt="One architecture told at three altitudes — C-level, solution architect, engineering — each answering a different question" width="100%">
 </p>
-
-> 💡 Screenshots and a longer worked example are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Installation
 
