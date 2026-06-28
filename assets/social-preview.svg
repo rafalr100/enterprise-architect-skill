@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="sbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#11161f"/>
+      <stop offset="1" stop-color="#0a0e15"/>
+    </linearGradient>
+    <linearGradient id="smono" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#f0883e"/>
+    </linearGradient>
+    <pattern id="sgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1b2230" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#sbg)"/>
+  <rect width="1280" height="640" fill="url(#sgrid)" opacity="0.45"/>
+  <rect x="0" y="0" width="14" height="640" fill="url(#smono)"/>
+
+  <!-- monogram -->
+  <rect x="96" y="150" width="150" height="150" rx="32" fill="url(#smono)"/>
+  <text x="171" y="252" font-size="76" font-weight="800" fill="#0d1117" text-anchor="middle">EA</text>
+
+  <!-- title block -->
+  <text x="96" y="380" font-size="86" font-weight="800" fill="#e6edf3">Enterprise Architect</text>
+  <text x="100" y="432" font-size="30" font-weight="600" fill="#9aa4b2">A Claude Skill — principal-architect judgement, on demand.</text>
+  <text x="100" y="470" font-size="24" font-weight="600" fill="#6e7681">Not an MCP server · 100% organisation-agnostic · MIT</text>
+
+  <!-- pills -->
+  <g font-size="22" font-weight="700">
+    <g>
+      <rect x="100" y="506" width="214" height="52" rx="26" fill="#161b22" stroke="#30363d"/>
+      <text x="207" y="540" fill="#fbbf24" text-anchor="middle">Discovery-first</text>
+    </g>
+    <g>
+      <rect x="328" y="506" width="222" height="52" rx="26" fill="#161b22" stroke="#30363d"/>
+      <text x="439" y="540" fill="#6e8bff" text-anchor="middle">Capability-first</text>
+    </g>
+    <g>
+      <rect x="564" y="506" width="226" height="52" rx="26" fill="#161b22" stroke="#30363d"/>
+      <text x="677" y="540" fill="#3fb950" text-anchor="middle">Trade-offs named</text>
+    </g>
+    <g>
+      <rect x="804" y="506" width="270" height="52" rx="26" fill="#161b22" stroke="#30363d"/>
+      <text x="939" y="540" fill="#bc8cff" text-anchor="middle">One recommendation</text>
+    </g>
+  </g>
+
+  <!-- right framework column -->
+  <g font-size="26" font-weight="700" text-anchor="end" fill="#4b5563">
+    <text x="1200" y="180" fill="#4b5563">TOGAF</text>
+    <text x="1200" y="222" fill="#4b5563">ZACHMAN</text>
+    <text x="1200" y="264" fill="#4b5563">C4</text>
+    <text x="1200" y="306" fill="#4b5563">WARDLEY</text>
+    <text x="1200" y="348" fill="#4b5563">DDD</text>
+  </g>
+  <text x="1200" y="392" font-size="16" font-weight="600" text-anchor="end" fill="#3a414c" letter-spacing="2">SILENT LENSES, NEVER RECITED</text>
+</svg>
