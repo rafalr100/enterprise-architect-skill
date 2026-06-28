@@ -77,6 +77,12 @@ The skill's signature move is that it **interrogates the problem before solving 
   <img src="assets/demo.gif" alt="Demo: a one-line microservices request is met with the skill's discovery questions before any design" width="92%">
 </p>
 
+…and once you answer, it delivers the artifact — here, the same architecture tiered for three audiences:
+
+<p align="center">
+  <img src="assets/demo-artifact.gif" alt="Demo: after the discovery answers, the skill produces an audience-tiered decks artifact" width="92%">
+</p>
+
 <details>
 <summary>Read the exchange as text</summary>
 
