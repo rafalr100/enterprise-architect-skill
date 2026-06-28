@@ -73,6 +73,13 @@ The reference files are **loaded on demand** — Claude reads only the one a giv
 
 The skill's signature move is that it **interrogates the problem before solving it**. A junior prompt gets a senior response:
 
+<p align="center">
+  <img src="assets/demo.gif" alt="Demo: a one-line microservices request is met with the skill's discovery questions before any design" width="92%">
+</p>
+
+<details>
+<summary>Read the exchange as text</summary>
+
 > **You:** We're moving to microservices. Design the target architecture.
 >
 > **Claude (enterprise-architect skill active):**
@@ -84,6 +91,8 @@ The skill's signature move is that it **interrogates the problem before solving 
 > 4. **Any fixed constraints** — cloud/vendor mandate, regulatory regime, a hard date?
 >
 > Answer those and I'll come back with a target architecture (current → target → gap → migration path), the dominant trade-off named, one recommended decomposition strategy, and the alternatives I rejected. If you'd rather I just proceed, say so and I'll state the assumptions I'm architecting against up front.
+
+</details>
 
 From there it produces the right artifact in the right shape — a reference architecture, an ADR, a capability map, or a board deck re-altituded to "do we fund this?" — with the trade-off and the ask made explicit. Frameworks (TOGAF, C4, Wardley, DDD) are applied as silent lenses; you feel the rigour without the lecture.
 
