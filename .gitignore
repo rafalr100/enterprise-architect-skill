@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*~
+
+# Claude Code local config
+.claude/
+
+# Archives / build artifacts
+*.zip
+*.tar
+*.tar.gz
+
+# OS / misc
+Thumbs.db
+desktop.ini
