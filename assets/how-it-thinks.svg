@@ -1,86 +1,90 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" width="1200" height="470" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 480" width="1240" height="480" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
   <defs>
-    <linearGradient id="t-bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#10151f"/>
-      <stop offset="1" stop-color="#0b0f17"/>
+    <linearGradient id="t-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#11161f"/><stop offset="1" stop-color="#0a0e15"/>
     </linearGradient>
-    <linearGradient id="gate" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#fbbf24"/>
-      <stop offset="1" stop-color="#f0883e"/>
+    <linearGradient id="gateFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a2706"/><stop offset="1" stop-color="#1a1206"/>
     </linearGradient>
-    <marker id="arr" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
-      <path d="M0 0L7 3L0 6Z" fill="#4b5563"/>
-    </marker>
+    <linearGradient id="nBlue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b2440"/><stop offset="1" stop-color="#0e1320"/></linearGradient>
+    <linearGradient id="nGreen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#103021"/><stop offset="1" stop-color="#0a160e"/></linearGradient>
+    <linearGradient id="nPurple" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#241a3a"/><stop offset="1" stop-color="#130e20"/></linearGradient>
+    <linearGradient id="nAmber" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a2706"/><stop offset="1" stop-color="#1a1206"/></linearGradient>
+    <marker id="arr" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0 0L7 3L0 6Z" fill="#6e7681"/></marker>
   </defs>
 
-  <rect x="1" y="1" width="1198" height="468" rx="20" fill="url(#t-bg)" stroke="#30363d" stroke-width="1.5"/>
-  <text x="40" y="56" font-size="26" font-weight="800" fill="#e6edf3">How it thinks — ask before you architect</text>
-  <text x="40" y="86" font-size="16" fill="#8b949e">The senior-vs-junior difference: interrogate the problem before solving it. This loop runs on every substantive request.</text>
+  <rect x="1" y="1" width="1238" height="478" rx="22" fill="url(#t-bg)" stroke="#30363d" stroke-width="1.5"/>
+  <text x="44" y="58" font-size="29" font-weight="800" fill="#e6edf3">How it thinks — ask before you architect</text>
+  <text x="44" y="88" font-size="16" fill="#8b949e">The senior-vs-junior difference: <tspan fill="#c9d1d9" font-weight="700">interrogate the problem before solving it</tspan>. This loop runs on every substantive request.</text>
 
   <!-- discovery gate -->
-  <rect x="40" y="120" width="1120" height="96" rx="16" fill="#1a1206" stroke="#fbbf24" stroke-width="1.5"/>
-  <rect x="40" y="120" width="6" height="96" rx="3" fill="url(#gate)"/>
-  <text x="72" y="156" font-size="18" font-weight="800" fill="#fbbf24">DISCOVERY GATE — the 3–5 questions that change the answer</text>
-  <g font-size="14" fill="#c9d1d9" font-weight="600">
-    <text x="72" y="186">• What's forcing this? (driver)</text>
-    <text x="330" y="186">• Which quality attributes dominate?</text>
+  <rect x="44" y="116" width="1152" height="98" rx="16" fill="url(#gateFill)" stroke="#fbbf24" stroke-width="2"/>
+  <circle cx="78" cy="150" r="15" fill="#fbbf24"/><text x="78" y="156" font-size="18" font-weight="800" fill="#0d1117" text-anchor="middle">?</text>
+  <text x="106" y="156" font-size="18" font-weight="800" fill="#fbbf24">DISCOVERY GATE — the 3–5 questions that change the answer</text>
+  <g font-size="13.5" fill="#c9d1d9" font-weight="600">
+    <text x="78" y="186">• What's forcing this? (driver)</text>
+    <text x="340" y="186">• Which quality attributes dominate?</text>
     <text x="660" y="186">• Greenfield or brownfield + team topology?</text>
-    <text x="72" y="208">• Hard constraints — budget, vendor, regulation?</text>
-    <text x="430" y="208" fill="#8b949e" font-weight="500" font-style="italic">No answers? State assumptions aloud, then proceed — silent guessing never.</text>
+    <text x="78" y="206">• Hard constraints — budget, vendor, regulation?</text>
+    <text x="440" y="206" fill="#8b949e" font-weight="500" font-style="italic">No answers? State assumptions aloud, then proceed — silent guessing never.</text>
   </g>
 
-  <!-- pipeline -->
-  <g font-size="14" font-weight="700">
-    <!-- node template: box + title + sub -->
-    <g>
-      <rect x="40" y="262" width="172" height="86" rx="12" fill="#161b22" stroke="#6e8bff" stroke-width="1.5"/>
-      <text x="126" y="296" fill="#6e8bff" text-anchor="middle" font-size="15">1 · Why</text>
-      <text x="126" y="320" fill="#8b949e" text-anchor="middle" font-size="12" font-weight="500">business driver</text>
-      <text x="126" y="336" fill="#8b949e" text-anchor="middle" font-size="12" font-weight="500">behind it</text>
-    </g>
-    <g>
-      <rect x="232" y="262" width="172" height="86" rx="12" fill="#161b22" stroke="#6e8bff" stroke-width="1.5"/>
-      <text x="318" y="296" fill="#6e8bff" text-anchor="middle" font-size="15">2 · Capability</text>
-      <text x="318" y="320" fill="#8b949e" text-anchor="middle" font-size="12" font-weight="500">not technology</text>
-      <text x="318" y="336" fill="#8b949e" text-anchor="middle" font-size="12" font-weight="500">first</text>
-    </g>
-    <g>
-      <rect x="424" y="262" width="172" height="86" rx="12" fill="#161b22" stroke="#3fb950" stroke-width="1.5"/>
-      <text x="510" y="296" fill="#3fb950" text-anchor="middle" font-size="15">3 · Quality attrs</text>
-      <text x="510" y="320" fill="#8b949e" text-anchor="middle" font-size="12" font-weight="500">the 2–3 that</text>
-      <text x="510" y="336" fill="#8b949e" text-anchor="middle" font-size="12" font-weight="500">actually drive it</text>
-    </g>
-    <g>
-      <rect x="616" y="262" width="172" height="86" rx="12" fill="#161b22" stroke="#3fb950" stroke-width="1.5"/>
-      <text x="702" y="296" fill="#3fb950" text-anchor="middle" font-size="15">4 · Options</text>
-      <text x="702" y="320" fill="#8b949e" text-anchor="middle" font-size="12" font-weight="500">each names</text>
-      <text x="702" y="336" fill="#8b949e" text-anchor="middle" font-size="12" font-weight="500">its trade-off</text>
-    </g>
-    <g>
-      <rect x="808" y="262" width="172" height="86" rx="12" fill="#161b22" stroke="#bc8cff" stroke-width="1.5"/>
-      <text x="894" y="296" fill="#bc8cff" text-anchor="middle" font-size="15">5 · Conway</text>
-      <text x="894" y="320" fill="#8b949e" text-anchor="middle" font-size="12" font-weight="500">can the org</text>
-      <text x="894" y="336" fill="#8b949e" text-anchor="middle" font-size="12" font-weight="500">build &amp; run it?</text>
-    </g>
-    <g>
-      <rect x="1000" y="262" width="160" height="86" rx="12" fill="#1a1206" stroke="#fbbf24" stroke-width="2"/>
-      <text x="1080" y="296" fill="#fbbf24" text-anchor="middle" font-size="15">6 · Recommend</text>
-      <text x="1080" y="320" fill="#c9d1d9" text-anchor="middle" font-size="12" font-weight="500">ONE direction</text>
-      <text x="1080" y="336" fill="#c9d1d9" text-anchor="middle" font-size="12" font-weight="500">+ rejected ones</text>
-    </g>
+  <!-- pipeline nodes -->
+  <g>
+    <rect x="44" y="262" width="178" height="92" rx="13" fill="url(#nBlue)" stroke="#6e8bff" stroke-width="1.5"/>
+    <circle cx="68" cy="286" r="13" fill="#6e8bff"/><text x="68" y="291" font-size="13" font-weight="800" fill="#0d1117" text-anchor="middle">1</text>
+    <text x="133" y="291" font-size="15" font-weight="800" fill="#9db0ff" text-anchor="middle">Why</text>
+    <text x="133" y="320" font-size="12.5" fill="#8b949e" text-anchor="middle">the business</text>
+    <text x="133" y="338" font-size="12.5" fill="#8b949e" text-anchor="middle">driver behind it</text>
+  </g>
+  <g>
+    <rect x="238" y="262" width="178" height="92" rx="13" fill="url(#nBlue)" stroke="#6e8bff" stroke-width="1.5"/>
+    <circle cx="262" cy="286" r="13" fill="#6e8bff"/><text x="262" y="291" font-size="13" font-weight="800" fill="#0d1117" text-anchor="middle">2</text>
+    <text x="333" y="291" font-size="15" font-weight="800" fill="#9db0ff" text-anchor="middle">Capability</text>
+    <text x="327" y="320" font-size="12.5" fill="#8b949e" text-anchor="middle">not technology</text>
+    <text x="327" y="338" font-size="12.5" fill="#8b949e" text-anchor="middle">first</text>
+  </g>
+  <g>
+    <rect x="432" y="262" width="178" height="92" rx="13" fill="url(#nGreen)" stroke="#3fb950" stroke-width="1.5"/>
+    <circle cx="456" cy="286" r="13" fill="#3fb950"/><text x="456" y="291" font-size="13" font-weight="800" fill="#0d1117" text-anchor="middle">3</text>
+    <text x="527" y="291" font-size="15" font-weight="800" fill="#56d364" text-anchor="middle">Quality attrs</text>
+    <text x="521" y="320" font-size="12.5" fill="#8b949e" text-anchor="middle">the 2–3 that</text>
+    <text x="521" y="338" font-size="12.5" fill="#8b949e" text-anchor="middle">actually drive it</text>
+  </g>
+  <g>
+    <rect x="626" y="262" width="178" height="92" rx="13" fill="url(#nGreen)" stroke="#3fb950" stroke-width="1.5"/>
+    <circle cx="650" cy="286" r="13" fill="#3fb950"/><text x="650" y="291" font-size="13" font-weight="800" fill="#0d1117" text-anchor="middle">4</text>
+    <text x="721" y="291" font-size="15" font-weight="800" fill="#56d364" text-anchor="middle">Options</text>
+    <text x="715" y="320" font-size="12.5" fill="#8b949e" text-anchor="middle">each names</text>
+    <text x="715" y="338" font-size="12.5" fill="#8b949e" text-anchor="middle">its trade-off</text>
+  </g>
+  <g>
+    <rect x="820" y="262" width="178" height="92" rx="13" fill="url(#nPurple)" stroke="#bc8cff" stroke-width="1.5"/>
+    <circle cx="844" cy="286" r="13" fill="#bc8cff"/><text x="844" y="291" font-size="13" font-weight="800" fill="#0d1117" text-anchor="middle">5</text>
+    <text x="915" y="291" font-size="15" font-weight="800" fill="#cbacff" text-anchor="middle">Conway</text>
+    <text x="909" y="320" font-size="12.5" fill="#8b949e" text-anchor="middle">can the org</text>
+    <text x="909" y="338" font-size="12.5" fill="#8b949e" text-anchor="middle">build &amp; run it?</text>
+  </g>
+  <g>
+    <rect x="1014" y="262" width="182" height="92" rx="13" fill="url(#nAmber)" stroke="#fbbf24" stroke-width="2.5"/>
+    <circle cx="1038" cy="286" r="13" fill="#fbbf24"/><text x="1038" y="291" font-size="13" font-weight="800" fill="#0d1117" text-anchor="middle">6</text>
+    <text x="1112" y="291" font-size="15" font-weight="800" fill="#fbbf24" text-anchor="middle">Recommend</text>
+    <text x="1105" y="320" font-size="12.5" fill="#c9d1d9" text-anchor="middle">ONE direction</text>
+    <text x="1105" y="338" font-size="12.5" fill="#c9d1d9" text-anchor="middle">+ rejected ones</text>
   </g>
 
   <!-- arrows -->
-  <g stroke="#4b5563" stroke-width="2" marker-end="url(#arr)">
-    <line x1="212" y1="305" x2="230" y2="305"/>
-    <line x1="404" y1="305" x2="422" y2="305"/>
-    <line x1="596" y1="305" x2="614" y2="305"/>
-    <line x1="788" y1="305" x2="806" y2="305"/>
-    <line x1="980" y1="305" x2="998" y2="305"/>
+  <g stroke="#6e7681" stroke-width="2" marker-end="url(#arr)">
+    <line x1="222" y1="308" x2="236" y2="308"/>
+    <line x1="416" y1="308" x2="430" y2="308"/>
+    <line x1="610" y1="308" x2="624" y2="308"/>
+    <line x1="804" y1="308" x2="818" y2="308"/>
+    <line x1="998" y1="308" x2="1012" y2="308"/>
   </g>
 
   <!-- governance footer -->
-  <rect x="40" y="378" width="1120" height="62" rx="12" fill="#0e1726" stroke="#30363d"/>
-  <text x="60" y="404" font-size="15" font-weight="800" fill="#e6edf3">7 · Path &amp; governance</text>
-  <text x="60" y="426" font-size="13.5" fill="#8b949e" font-weight="500">Sequencing (now / next / later) · the Decision / Ask · how adoption and compliance are measured. A standard with no compliance measure is just documentation.</text>
+  <rect x="44" y="386" width="1152" height="66" rx="13" fill="#0e1726" stroke="#30363d"/>
+  <circle cx="78" cy="419" r="15" fill="#3fb950"/><text x="78" y="425" font-size="15" font-weight="800" fill="#0d1117" text-anchor="middle">7</text>
+  <text x="106" y="414" font-size="15" font-weight="800" fill="#e6edf3">Path &amp; governance</text>
+  <text x="106" y="436" font-size="13" fill="#8b949e" font-weight="500">Sequencing (now / next / later) · the Decision / Ask · how adoption and compliance are measured. A standard with no compliance measure is just documentation.</text>
 </svg>
